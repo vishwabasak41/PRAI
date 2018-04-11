@@ -1,0 +1,173 @@
+{% load static %}
+<html>
+<head>
+<title>PRAI | HOME
+</title>
+<link href="{% static 'bstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<!-- <link href="{% static 'css/speedhome.css' %}" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+<link href="{% static 'css/scrol.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet'>
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<style>
+body{
+    background-color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:768px;
+    width:1340px;
+    margin: 0px 0px 0px 0px;
+    font:bold;
+
+}
+.thumbnail{        
+    width: 345px; 
+    height:200px;
+    overflow: auto;
+    padding-left:20px;
+    margin-left: 20px;
+    margin-top:50px;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body style="font-family:'Fondamento',bold sans-serif;" class="fadeInDown animated">
+
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+ <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+             <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+       </button>
+     <a href="/home/" class="navbar-brand hvr-grow"><b><b>PUBLIC RELATIONS ARTIFICIAL INTELLIGENCE</b></b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+       
+     
+     
+<!--      <li><a class="page-scroll hvr-grow" href="#modules">MODULES</a>
+     <li><a class="page-scroll hvr-grow" href="#posts">POST-PREDICTION</a>
+      <li><a class="page-scroll hvr-grow" href="#delete">DELETE</a> -->
+      <li><a class="page-scroll hvr-grow" href="#vision">OUR VISION</a>
+      <li><a class="page-scroll hvr-grow" href="#modules">MODULES</a>
+
+   
+    </ul>
+    <button style="float:right;margin-right: 20px;size:30px;margin-top: 10px;color:black;" class="btn btn-default hvr-grow"><a style="color:black;" href="/login/"><b>LOGIN</b></a></button>
+  </div>
+  </div>
+ </nav>
+<img src="{% static 'base.jpg' %}">
+<br>
+<br>
+<br>
+<br>
+<div class="row" id="modules" style="background-color: black;">
+  <div class="col-sm-6 col-md-4">
+   <a href="/login/"> <div class="thumbnail hvr-grow" style="background-image:url('{% static 'pic1.jpg' %}');">
+          </div></a>
+  </div>
+<div class="col-sm-6 col-md-4">
+   <a href="/login/"><div class="thumbnail hvr-grow" style="background-image:url('{% static 'PIC.jpg' %}')">
+     
+
+    </div>
+    </a>
+  </div>
+  
+<div class="col-sm-6 col-md-4">
+    <a href="/login/"><div class="thumbnail hvr-grow" style="background-image:url('{% static 'pic3.jpg' %}')">
+    </div></a>
+  </div>
+</div>
+
+<div class="jumbotron" id="vision" style="background-color:rgb(224,224,226);">
+    <div class="container" style="color:black;" ><br><br><br>
+    <br><div class="container">
+         <div>
+    <h2>Our Vision</span></h2>
+    <p><b>Public relations promotes goodwill and communication between the company and consumer. PRAI is its virtual response which aims at providing all the functionalities of Public Relation Officer through online analytical tools. <br>
+It provides its clients with the feature to analyse their social media posts and produce results accordingly. This further helps clients to manage their future posts. The purpose of PRAI also includes segregating the posts on the basis of sentimental analysis and giving the clients a clear view of audience’s responses. Individual posts on the clients’ account can be specifically analysed. Furthermore, PRAI can eliminate inappropriate or negative comments, if required, on clients’ requests.
+<br>
+<br>
+“Protect your enthusiasm from the negativity of others.”  -H.Jackson Brown,Jr.<br><br>
+In accordance with the popular saying, PRAI offers feature to stop negativity from engulfing the exciting stuffs. Users can avail this feature in this module of PRAI. Users can remove the negative or inappropriate comments posted by some irresponsible audience. This feature cleans their posts and makes it more enjoyable for far greater audience.</b></p>
+    </div>
+    <div class="btn-group" >
+    <a href="/signup/" style="color:white; background-color:rgb(100,100,100);" class="btn btn-lg btn-default hvr-grow">SIGNUP</a>
+    </div>
+ </div>
+</div>
+</div>
+
+
+
+
+
+
+<footer style= "background-color: black;color:white;"  class="text-center">Thankyou for visiting! </footer>
+
+
+
+
+
+
+
+
+
+
+
+<script type = "text/javascript" 
+         src = "{% static 'js/jquery.min.js' %}"></script>
+
+</script>
+
+
+<script type = "text/javascript" 
+         src = "{% static 'js/jquery.min.js' %}"></script>
+</script>
+<!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'bstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/scrol.js' %}"></script>
+ </body>
+</html>

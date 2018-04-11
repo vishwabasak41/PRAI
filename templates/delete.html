@@ -1,0 +1,107 @@
+{% load static %}
+<html>
+<head>
+<title>PRAI | HOME
+</title>
+<link href="{% static 'bstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<!-- <link href="{% static 'css/speedhome.css' %}" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+<link href="{% static 'css/scrol.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet'>
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<style>
+body{
+    background-color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:768px;
+    width:1340px;
+    margin: 0px 0px 0px 0px;
+    font:bold;
+
+}
+.thumbnail{        
+    width: 345px; 
+    height:200px;
+    overflow: auto;
+    padding-left:20px;
+    margin-left: 20px;
+    margin-top:50px;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body style="font-family:'Fondamento',bold sans-serif;" class="fadeInDown animated">
+<div style="padding-top:10px;background-color:black;opacity:0.8;">
+<h1 style="padding-left:20px;padding-top:0px;font-family:'',bold sans-serif;font-size: 50px;color:white; opacity:1.0;">
+<img src="{% static 'images.jpg' %}"><b style="padding-left:10px;" >PRAI</b><small style="font-size:20px;">WORDPRESS COMMENT DELETION</small>
+
+
+<button style="float:right;margin-right: 20px;size:30px;margin-top: 10px;" class="btn btn-default hvr-grow"><a href="/logout/">LOGOUT</a></button>
+</h1>
+</div>
+
+
+{% if there %}
+Your authorization code is: {{ comcode }}
+<button method="POST" style="background-color: black;color:white;" class="btn btn-default hvr-grow"><a href="https://public-api.wordpress.com/oauth2/token/code={{ comcode }}&client_id=57822&client_secret=jOSxapvsZz0ALqVMHVzBiOsdCYFUbG6gZ1NNRhtwVNnOnavfTMafkT0mSwC1L71I&redirect_uri=http://localhost:7000/delete/comment/">AUTHORIZE</a></button>
+{% endif %}
+
+{% if valid %}
+Your authentication code is:{{ comcode }}
+{% endif %}
+
+
+<footer style= "background-color: black;color:white;margin-top: 460px;"  class="text-center">Thankyou for visiting! </footer>
+
+
+<script type = "text/javascript" 
+         src = "{% static 'js/jquery.min.js' %}"></script>
+
+</script>
+
+
+<script type = "text/javascript" 
+         src = "{% static 'js/jquery.min.js' %}"></script>
+</script>
+<!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'bstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/scrol.js' %}"></script>
+ </body>
+</html>

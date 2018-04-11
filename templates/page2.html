@@ -1,0 +1,400 @@
+{% load static %}
+<html>
+<head>
+<title>PRAI | HOME
+</title>
+<link href="{% static 'bstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<!-- <link href="{% static 'css/speedhome.css' %}" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+<link href="{% static 'css/scrol.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet'>
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<style>
+body{
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:768px;
+    width:1340px;
+    margin: 0px 0px 0px 0px;
+
+}
+.thumbnail{        
+    width: 345px; 
+	height:200px;
+    overflow: auto;
+    padding-left:20px;
+    margin-left: 20px;
+    margin-top:50px;
+    border-radius: 10%;
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body style="font-family:'Fondamento',bold sans-serif;" class="fadeInDown animated">
+
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+ <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+             <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+       </button>
+     <a href="/home/" class="navbar-brand">HAPPY ANNIVERSARY</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+       
+     
+     
+     <li><a class="page-scroll" href="#years">Memorable years</a>
+     <li><a class="page-scroll" href="#poems">Write Ups!</a>
+      <li><a class="page-scroll" href="#special">Special</a>
+      <li><a class="page-scroll" href="#chats">Chats<span class="glyphicon glyphicon-heart"></a>
+   
+    </ul>
+  </div>
+  </div>
+ </nav>
+
+<div class="jumbotron text-center" style="background-color:rgb(51,144,151);opacity:1.0;">
+    <div class="container hvr-grow " style="color:black;" ><br><br><br>
+    <br><div class="container">
+         <div>
+    <h2>From Best friends to Family<span class="glyphicon glyphicon-heart"></span></h2>
+	<h3><b>Happy 2 Years baby!</b></h3><br>
+	<p><b>This one's for you.<br> Hope you love it and i can see the smile that i always want to :)</b></p>
+	</div>
+	<div class="btn-group" >
+	<a href="/message/" style="color:white; background-color:rgb(100,100,100);" class="btn btn-lg btn-default hvr-grow">My message!(for the end :*)</a>
+    </div>
+ </div>
+</div>
+</div>
+
+
+
+
+<div class="row" id="years">
+  <div class="col-sm-6 col-md-4">
+   <a href="/2015/"> <div class="thumbnail hvr-grow" style="background-image:url('{% static '2015.jpg' %}');">
+      
+      <div class="caption">
+        <h1 style="padding-left: 70px;padding-top: 100px; color:white;">2015</h1>
+      </div>
+    </div></a>
+  </div>
+<div class="col-sm-6 col-md-4">
+   <a href="/2016/"><div class="thumbnail hvr-grow" style="background-image:url('{% static '2016-2.jpg' %}')">
+     
+      <div class="caption">
+        <h1 style="padding-left: 70px;padding-top: 100px; color:white;">2016</h1>
+      </div>
+    </div>
+    </a>
+  </div>
+  
+<div class="col-sm-6 col-md-4">
+    <a href="/2017/"><div class="thumbnail hvr-grow" style="background-image:url('{% static '2017-3.jpg' %}')">
+      <div class="caption">
+      <h1 style="padding-left: 70px;padding-top: 100px; color:white;">2017</h1>
+      </div>
+    </div></a>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+       <section>
+          <div class="page-header" id="poems">
+              <h2 style="color:white;"">Those soul touching love write-ups!   <small style="color:white;">Hidden writer :* </small></h2>
+              </div>
+             <div id="myexp" class="carousel slide" data-interval="3000" data-ride="carousel">
+
+  
+                    <ol class="carousel-indicators">
+                    <li data-target="#myexp" data-slide-to="0" class="active"></li>
+                    <li data-target="#myexp" data-slide-to="1"></li>
+                    <li data-target="#myexp" data-slide-to="2"></li>
+                    </ol>
+                          <div class="carousel-inner">
+                              <div class="item active">
+                                    <img src="{% static 'poem4.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3></h3>
+    
+                                      </div>
+      
+                               </div>
+                          
+                               <div class="item ">
+                                    <img src="{% static 'poem2.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3></h3>
+    
+                                      </div>
+      
+                               </div>
+                               <div class="item ">
+                                    <img src="{% static 'writer.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3></h3>
+    
+                                      </div>
+      
+                               </div>
+                              
+                               <div class="item">
+                                    <img src="{% static 'poem1.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3></h3>
+    
+                                      </div>
+                               </div>
+                                <div class="item ">
+                                    <img src="{% static 'poem3.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3></h3>
+    
+                                      </div>
+      
+                               </div>
+                               <div class="item">
+                                    <img src="{% static 'poem4.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3 style="color: black;"></h3>
+    
+                                      </div>
+                               </div>
+
+  </div>
+ 
+  <!-- Controls -->
+                 <a class="left carousel-control" href="#myexp" role="button" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                 </a>
+                 <a class="right carousel-control" href="#myexp" role="bu tton" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                 </a>
+                 </div> <!-- Carousel -->
+             </section>
+         </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+       <section>
+          <div class="page-header" style="color:white;" id="special">
+              <h2>Special    <small style="color:white;">P.S-Don't kill me :)</small></h2>
+              </div>
+             <div id="myexp" class="carousel slide" data-interval="3000" data-ride="carousel">
+
+  
+                    <ol class="carousel-indicators">
+                    <li data-target="#myexp" data-slide-to="0" class="active"></li>
+                    <li data-target="#myexp" data-slide-to="1"></li>
+                    <li data-target="#myexp" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                     <div class="item active">
+                                    <img src="{% static 'sp3.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3>Sweet :P</h3>
+    
+                                      </div>
+      
+                               </div>
+                          
+                               <div class="item ">
+                                    <img src="{% static 'sp2.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3>Aww</h3>
+    
+                                      </div>
+      
+                               </div>
+                              
+                               <div class="item">
+                                    <img src="{% static 'sp1.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3>Funny :D</h3>
+    
+                                      </div>
+                               </div>
+                                <div class="item ">
+                                    <img src="{% static 'sp4.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3>I'm batman look :P</h3>
+    
+                                      </div>
+      
+                               </div>
+                               <div class="item">
+                                    <img src="{% static 'sp5.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3 style="color: black;">THE IMP ONE:gussa suyash(blanket version) :P</h3>
+    
+                                      </div>
+                               </div>
+
+
+
+  </div>
+ 
+  <!-- Controls -->
+                 <a class="left carousel-control" href="#myexp" role="button" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                 </a>
+                 <a class="right carousel-control" href="#myexp" role="bu tton" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                 </a>
+                 </div> <!-- Carousel -->
+             </section>
+         </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+       <section>
+          <div class="page-header" style="color:white;" id="chats">
+              <h2>Our Chats   <small style="color:white;">They got us where we are. :)</small></h2>
+              </div>
+             <div id="myexp" class="carousel slide" data-interval="3000" data-ride="carousel">
+
+  
+                    <ol class="carousel-indicators">
+                    <li data-target="#myexp" data-slide-to="0" class="active"></li>
+                    <li data-target="#myexp" data-slide-to="1"></li>
+                    <li data-target="#myexp" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                     <div class="item active">
+                                    <img src="{% static 'chat1.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3 style="color: black;">So,it bagan this way :D</h3>
+    
+                                      </div>
+      
+                               </div>
+                          
+                               <div class="item ">
+                                    <img src="{% static 'chat2.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3 style="color: black;">A more of it :P</h3>
+    
+                                      </div>
+      
+                               </div>
+                              
+                               <div class="item">
+                                    <img src="{% static 'chat3.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3 style="color: black;">And suddenly this happened</h3>
+    
+                                      </div>
+                               </div>
+                                <div class="item ">
+                                    <img src="{% static 'chat4.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3 style="color: black;">Finally some awaited outburst</h3>
+    
+                                      </div>
+      
+                               </div>
+                               <div class="item">
+                                    <img src="{% static 'chat4.5.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3 style="color: black;">R WE? YES WE ARE!</h3>
+    
+                                      </div>
+                               </div>
+
+                                      <div class="item">
+                                    <img src="{% static 'chat5.jpg' %}" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     <h3 style="color: black;">FOREVER AND AFTER :*</h3>
+    
+                                      </div>
+                               </div>
+                             
+              </div>
+ 
+  <!-- Controls -->
+                 <a class="left carousel-control" href="#myexp" role="button" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                 </a>
+                 <a class="right carousel-control" href="#myexp" role="bu tton" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                 </a>
+                 </div> <!-- Carousel -->
+             </section>
+         </div>
+
+<audio id="my_audio" src="{% static 'u_me.mp3' %}" loop="loop"></audio>
+
+
+
+
+<script type = "text/javascript" 
+         src = "{% static 'js/jquery.min.js' %}"></script>
+
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
+
+
+<script type = "text/javascript" 
+         src = "{% static 'js/jquery.min.js' %}"></script>
+</script>
+<!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'bstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/scrol.js' %}"></script>
+ </body>
+</html>

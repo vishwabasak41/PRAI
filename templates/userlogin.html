@@ -1,0 +1,111 @@
+{% load static %}
+<html>
+<head>
+<title>
+PRAI | USERLOGIN
+</title>
+<style>
+#background1{
+    background-image: url("{% static '2.jpg' %}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(51,144,151);
+    opacity:0.2;
+    height:768px;
+    width:1340px;
+    margin: 0px 0px 0px 0px;
+
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+.zoomIn{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+.thumbnail{        
+    width: 345px; 
+    height:200px;
+    overflow: auto;
+    padding-left:20px;
+    margin-left: 20px;
+    margin-top:50px;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet'>
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+</head>
+<body>
+<div style="padding-top:10px;background-color:black;opacity:0.8;">
+<h1 style="padding-left:20px;padding-top:0px;font-family:'',bold sans-serif;font-size: 50px;color:white; opacity:1.0;">
+<img src="{% static 'images.jpg' %}"><b style="padding-left:10px;" >PRAI</b><small style="font-size:20px;">WORDPRESS LOGIN</small>
+
+
+<button style="float:right;margin-right: 20px;size:30px;margin-top: 10px;" class="btn btn-default hvr-grow"><a href="/logout/">LOGOUT</a></button>
+</h1>
+</div>
+
+<div class="alert alert-success">
+  <strong>Success!</strong>welcome {{name}}
+      <br>
+   <strong> Happy PRAI-ing :)!</strong>
+</div>
+
+<strong> Pick an action :)!</strong>
+<div class="row" id="" style="background-color: black;">
+  <div class="col-sm-6 col-md-4">
+   <a href="/dashboard/"> <div class="thumbnail hvr-grow" style="background-image:url('{% static 'pic1.jpg' %}');">
+          </div></a>
+  </div>
+<div class="col-sm-6 col-md-4">
+   <a href="/post/"><div class="thumbnail hvr-grow" style="background-image:url('{% static 'PIC.jpg' %}')">
+     
+
+    </div>
+    </a>
+  </div>
+  
+<div class="col-sm-6 col-md-4">
+    <a href="https://public-api.wordpress.com/oauth2/authorize?client_id=57822&redirect_uri=http://localhost:7000/delete/&response_type=code"><div class="thumbnail hvr-grow" style="background-image:url('{% static 'pic3.jpg' %}')">
+    </div></a>
+  </div>
+</div>
+<!-- 
+<button style="margin-right: 20px;size:30px;margin-top: 10px;background-color: black;color:white;" class="btn btn-default hvr-grow"><a href="https://api.instagram.com/oauth/authorize/?client_id=f88af072f4f64bcf96bf5f87d2899c0b&redirect_uri=https://localhost:7000/sentiment/&response_type=token" style="color:white;">INSTA-LOGIN</a></button>
+<br>
+<button style="margin-right: 20px;size:30px;margin-top: 10px;background-color: black;color:white;" class="btn btn-default hvr-grow"><a href="https://userstream.twitter.com/1.1/user.json" style="color:white;">Twitter-LOGIN</a></button><br>
+
+<button style="margin-right: 20px;size:30px;margin-top: 10px;background-color: black;color:white;" class="btn btn-default hvr-grow"><a href="/wordpress/" style="color:white;">Wordpress-LOGIN</a></button> -->
+
+</body>
+</html>
